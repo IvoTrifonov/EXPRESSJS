@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+html li {  list-style-type: none; }
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 50em;
+}
+
+/*------------------------------- <HEADER STYLES> -----------------------------------------------------*/
+.site-header {
+    background-image: linear-gradient(to right, #627fad, #4d6aa2, #3b5496, #2c3f89, #21297a);
+    min-height: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-header ul {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 0.6em;
+    border: 1px solid transparent;
+    border-radius: 3em;
+}
+
+.site-header ul li a:hover {
+    border: 1px solid #ffffff;
+}
+/*------------------------------- </HEADER STYLES> -----------------------------------------------------*/
+
+/*------------------------------- <MAIN STYLES> -----------------------------------------------------*/
+.site-main {
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.site-main h2 {
+    text-align: center;
+}
+
+.cars-list ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cars-list li {
+    max-width: 50%;
+    border: 2px solid gray;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1.2em; 
+    transition: background-color 0.25s ease-in;
+}
+
+.cars-list li:hover {
+    background-color: lightgray;
+}
+
+.cars-list li img {
+    width: 95%;
+    
+}
+
+.cars-list li img,
+.cars-list li h4,
+.cars-list li h5,
+.cars-list li p {
+    margin-top: 0.4em; 
+}
+
+.cars-list ul p {
+    font-size: 0.8em;
+}
+
+.cars-list ul p span {
+    font-weight: bold;
+}
+
+.site-main .car-form {
+    display: flex;
+    justify-content: center;
+}
+
+.site-main form {
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+    border: 2px solid gray;
+    border-radius: 1em;
+    transition: 0.2s background-color ease-in;
+}
+
+.site-main form:hover {
+    background: rgb(241, 241, 241);
+}
+
+.site-main form input,
+.site-main form select {
+    max-width: 50%;
+}
+
+.site-main form textarea { max-width: 70%; } 
+
+.site-main form label {
+    margin: 0.5em 0 0.2em 0; 
+}
+
+.site-main form input { 
+    padding: 0.6em;
+    border: 1.5px solid lightgray;
+    border-radius: 0.4em;
+    outline: none;
+}
+ 
+.site-main form .submit-btn {
+    margin-top: 1em; 
+    font-weight: bold;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.site-main form .submit-btn:hover {
+    background-color: #2c3f89;
+    color: #ffffff;
+}
+
+
+
+/*------------------------------- </MAIN STYLES> -----------------------------------------------------*/

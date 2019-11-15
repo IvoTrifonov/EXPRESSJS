@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/css/site.css" type="text/css" rel="stylesheet">
+    <title>AUTOSTORE</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="">AUTOSTORE</a></li>
+                <li><a href="/create">ADD A CAR</a></li>
+                <li><a href="/dealers">DEALERS</a></li>
+                <li><a href="">CONTACTS</a></li>
+                <li><a href="">RENT A CAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <h2>ALL CARS</h2>
+        <section class="cars-list">
+            <ul>
+                {{#each cars}}
+                    <li>
+                        <img src="{{this.imageUrl}}" alt="">
+                        <h4><span>Manufacturer: </span>{{this.manufacturer}}</h4>
+                        <h5><span>Model: </span>{{this.model}}</h5>
+                        <p><span>Year: </span>{{this.year}}</p>
+                        <p><span>Fuel: </span>{{this.engine.fuelType}}</p>
+                        <p><span>Cubic Capacity: </span>{{this.engine.cubicCapacity}}</p>
+                        <p><span>Horsepower: </span>{{this.engine.horsePower}}</p>
+                        <p><span>Description: </span>{{this.description}}</p>
+                        <p><span>Mileage: </span> {{this.mileage}}</p>
+                    </li>
+                {{/each}}
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

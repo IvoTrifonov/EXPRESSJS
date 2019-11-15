@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/css/site.css" type="text/css" rel="stylesheet">
+    <title>Add a car</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="/">AUTOSTORE</a></li>
+                <li><a href="/create">ADD A CAR</a></li>
+                <li><a href="/dealers">DEALERS</a></li>
+                <li><a href="">CONTACTS</a></li>
+                <li><a href="">RENT A CAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <h2>ADD A CAR</h2>
+            <div class="car-form">
+                <form action="/create" method="POST">
+                <label for="manufacturer">Manufacturer</label>
+                <input type="text" id="manufacturer" name="manufacturer">
+                
+                <label for="model">Model</label>
+                <input type="text" id="model" name="model">
+
+                <label for="year">Year</label>
+                <input type="number" id="year" name="year" min="1970" max="2020">
+
+                <label for="image">ImageUrl</label>
+                <input type="text" id="image" name="imageUrl">
+
+                <label for="fuelType">Fuel Type</label>
+                <select id="fuelType" name="fuelType">
+                <option value="Diesel">Diesel</option>
+                <option value="Gasoline">Gasoline</option>
+                <option value="Electric">Electric</option>
+                </select>
+
+                <label for="cubicCapacity">CubicCapacity</label>
+                <input type="number" id="cubicCapacity" name="cubicCapacity" min="400" max="8000">
+
+                <label for="horsePower">Horsepower</label>
+                <input type="number" id="horsePower" name="horsePower">
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Write something about the car..." rows="10", cols="70"></textarea>  
+
+                <label for="mileage">Mileage</label>
+                <input type="number" id="mileage" name="mileage">
+
+                <input type="submit" value="ADD" class="submit-btn">
+                </form>
+            </div>
+    </main>
+</body>
+</html>
